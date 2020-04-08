@@ -1,0 +1,30 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+Flask = "*"
+Flask-Compress = "*"
+flask_api = "*"
+Flask-Cors = "*"
+Flask-RESTful = "*"
+Flask-SQLAlchemy = "*"
+python-decouple = "*"
+alembic = "*"
+SQLAlchemy = "*"
+pycrypto = "*"
+cffi = "*"
+psycopg2-binary = "*"
+gunicorn = "*"
+gevent = "*"
+schematics = "==2.1.0"
+celery = "*"
+redis = "*"
+confluent-kafka = "*"
+
+[requires]
+python_version = "3.7"
