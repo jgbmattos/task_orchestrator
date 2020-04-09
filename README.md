@@ -16,7 +16,7 @@ Se quiser instale o android studio para ter acesso ao emulador.
 Via terminal acesse a pasta backend do projecto, execute *docker-compose up -d*
 
 Via terminal acesse pasta mobile do projeto, execute *yarn install* 
-Ainda na pasta do mobile, execute expo start.
+Ainda na pasta do mobile, execute *expo start*.
 
 Se tudo der certo vai abrir uma pagina web aonde sera inciado o projeto do mobile. 
 Caso tenha instaldo o android studio voce pode clicar no botao iniciar no android.
