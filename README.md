@@ -9,7 +9,7 @@ Instale o [docker](https://docs.docker.com/docker-for-windows/install/)
 
 Instale o [chocolatey](https://chocolatey.org/install)
 
-Instale o [NPM](https://vocon-it.com/2019/11/19/install-npm-using-chocolatey-on-windows/). (De preferência utilize o chocolatey para se acostumar comk gerenciador de pacote)
+Instale o [NPM](https://vocon-it.com/2019/11/19/install-npm-using-chocolatey-on-windows/). (De preferência utilize o chocolatey para se acostumar com gerenciador de pacote)
 
 Se quiser instale o android studio para ter acesso ao emulador.
 
