@@ -1,7 +1,16 @@
-Vamos comecar do comeco.
-Instale o docker
-Instale o chocolatey
-Instale o NPM.
+# TASK ORCHESTRATOR
+## Esse é um projeto de controle de tarefas. A idéia original é testarmos tecnologia de ponta com foco em qualidade e usabilidade.
+
+# Como instalar
+
+Para rodar o projeto:
+
+Instale o [docker](https://docs.docker.com/docker-for-windows/install/)
+
+Instale o [chocolatey](https://chocolatey.org/install)
+
+Instale o [NPM](https://vocon-it.com/2019/11/19/install-npm-using-chocolatey-on-windows/). (De preferência utilize o chocolatey para se acostumar comk gerenciador de pacote)
+
 Se quiser instale o android studio para ter acesso ao emulador.
 
 Acesse com o CMD do windows a pasta do backend e rode docker-compose up -d. Se tu der certo o backend deve subir.
