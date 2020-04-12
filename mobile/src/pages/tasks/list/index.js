@@ -7,7 +7,7 @@ import { Feather } from '@expo/vector-icons';
 import styles from './styles';
 import api from '../../../services/api';
 import buildTimeSpentPayload, { FormatTime } from '../../../helpers/timeControl'
-
+import mockedTaskList from './mocked_task_list';
 
 export default function TasksList() {
     const [tasksList, setTasksList] = useState([]);
@@ -26,7 +26,7 @@ export default function TasksList() {
             return
         }
 
-        refreshTaskListArray = [];
+        let refreshTaskListArray = [];
         for (var task_id in tasksList){
             if (tasksList[task_id].playing){
                 tasksList[task_id].current_time_spent = tasksList[task_id].current_time_spent + parseInt((new Date().getTime() - dateTimeStart) / 1000);
@@ -56,9 +56,15 @@ export default function TasksList() {
         setTasksList(newTaskArray);
     }
 
-    function getTasksList(){
+    async function getTasksList(){
         if (! tasksList.length){
-            api.get('/tasks').then(response => {setTasksList(response.data)}).catch(error => console.log(error))
+            try{
+                await api.get('/tasks').then(response => {setTasksList(response.data)});
+                console.log('pegando da APi');
+            } catch (error) {
+                setTasksList(mockedTaskList);
+                console.log('pegando do mock')
+            }
         }
     };
 
